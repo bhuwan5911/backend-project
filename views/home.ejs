@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="homepage">
+    <header class="header">
+        <h1>E-Commerce Store</h1>
+        <nav class="nav-links">
+            <a href="/cart">View Cart</a>
+        </nav>
+        <nav class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/cart">View Cart</a>
+</nav>
+    </header>
+    <main>
+        <h2 class="section-title">Our Awesome Products</h2>
+        <div class="product-grid">
+            <% products.forEach(function(product) { %>
+                <div class="product-card">
+                    <img src="<%= product.image %>" alt="<%= product.name %>">
+                    <h3><%= product.name %></h3>
+                    <p>₹<%= product.price.toFixed(2) %></p>
+                    <a href="/products/<%= product.id %>">View Details</a>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+</body>
+</html>

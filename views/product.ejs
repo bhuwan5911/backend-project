@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %> Details</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="product-page">
+    <a href="/" class="back-link">&lt; Back to all products</a>
+    <main>
+        <div class="product-details">
+            <img class="product-image" src="<%= product.image %>" alt="<%= product.name %>">
+            <div class="product-info">
+                <h1><%= product.name %></h1>
+                <p><strong>Price:</strong> ₹<%= product.price.toFixed(2) %></p>
+                <p><%= product.description %></p>
+                
+                <form action="/cart/add" method="POST">
+                    <input type="hidden" name="productId" value="<%= product.id %>">
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

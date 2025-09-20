@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "I Phone 17",
+    "price": 82900,
+    "description": "A powerful and sleek Iphone 17, not for everyone.",
+    "image": "/images/iphone.jpg"
+  },
+  {
+    "id": 2,
+    "name": "M4 Macbook",
+    "price": 212000,
+    "description": "A high-performance laptop perfect for professional use, also not for everyone.",
+    "image": "/images/macbook.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Headphones",
+    "price": 60000,
+    "description": "Crystal-clear audio with noise-cancellation and a comfortable fit, also not for everyone.",
+    "image": "/images/headphones.jpg"
+  }
+]

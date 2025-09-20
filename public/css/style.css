@@ -1,0 +1,192 @@
+/* Basic reset and font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and navigation */
+.header {
+    background-color: #21a3ff;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/* Product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: #007bff;
+}
+
+button, .product-card a {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none; /* For links */
+    display: inline-block;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover, .product-card a:hover {
+    background-color: #0056b3;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/* Product detail page */
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.product-details img {
+    width: 400px;
+    border-radius: 12px;
+}
+/* Other button styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* New: Style the back-link to look like a button */
+.back-link {
+    background-color: #6c757d; /* A subtle grey color */
+    color: white;
+    text-decoration: none; /* Removes the underline */
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block; /* Makes it behave like a block element */
+    margin-bottom: 2rem; /* Adds some space below it */
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #5a6268;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Cart page specific styles */
+.cart-container {
+    padding: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+}
+
+.cart-item-details h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.cart-item-details p {
+    margin: 0.5rem 0 0;
+    color: #555;
+}
+
+/* Style for the "Continue Shopping" link */
+.continue-shopping-link {
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: background-color 0.3s;
+}
+
+.continue-shopping-link:hover {
+    background-color: #5a6268;
+}
